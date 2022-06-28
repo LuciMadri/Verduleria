@@ -16,7 +16,6 @@ import com.Verdureria.repository.VerduleriaRepository;
  */
 //Le decimos de que es el tipo de clase que va implementar en este caso Servicio
 @Service
-
 //Implementamos IPersonaService
 //Este implements es una clase implementaria, osea que tiene una
 //o mas interfaces.
