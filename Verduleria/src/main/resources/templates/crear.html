@@ -61,12 +61,12 @@
              
                         <!---------------------------------------------------------------------------------------------------------------------------- -->
                          <div class="form-group mb-3 row">
-                            <label class="form-control-sm col-form-label col-md-2" for="sede">Sede</label>
+                            <label class="form-control-sm col-form-label col-md-2" for="sedes2">Sede</label>
                             <div class="col-sm-10">
                                 <select th:field="*{sede}" class="form-control form-control-sm col-md-6" id="sede" aria-describedby="emailHelp">
-                                    <option th:each="x:${sede}"
+                                    <option th:each="x:${sedes}"
                                             th:value="${x.id_sede}"
-                                            th:text="${x.id_sede}"/>
+                                            th:text="${x.nom_sede}"/>
                                 </select>
                             </div>
                         </div>

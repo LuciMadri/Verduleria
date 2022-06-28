@@ -16,6 +16,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 
 /**
  *
@@ -75,7 +76,7 @@ public class VerduleriaController {
         return "crear";
     }
     
-    @GetMapping("/save")
+    @PostMapping("/save")
     public String guardarVerdura(@ModelAttribute Verduleria verduleria){
         //Con esto lo guardo en la bd
         verduleriaService.saveVerduleria(verduleria);
@@ -92,5 +93,11 @@ public class VerduleriaController {
         model.addAttribute("sedes", listaSede);
         return "crear";
     }
+    
+    @GetMapping("/delete/{id}")
+    public String eliminarVerdura(@PathVariable("id")Integer idVerdura){
+        verduleriaService.delete(idVerdura);
+        return "redirect:/verduleria";
+    } 
 }
 

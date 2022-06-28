@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "sede")
+@Table(name = "Sede")
 
 public class Sede implements Serializable{
     
@@ -19,12 +19,12 @@ public class Sede implements Serializable{
     private String ubicacion;
     private String nom_sede;
 
-    public int getId_Sede() {
+    public int getId_sede() {
         return id_sede;
     }
 
-    public void setId_Sede(int id_Sede) {
-        this.id_sede = id_Sede;
+    public void setId_sede(int id_sede) {
+        this.id_sede = id_sede;
     }
 
     public String getUbicacion() {
@@ -35,13 +35,12 @@ public class Sede implements Serializable{
         this.ubicacion = ubicacion;
     }
 
-    public String getNom_Sede() {
+    public String getNom_sede() {
         return nom_sede;
     }
 
-    public void setNom_Sede(String nom_Sede) {
-        this.nom_sede = nom_Sede;
+    public void setNom_sede(String nom_sede) {
+        this.nom_sede = nom_sede;
     }
 
-     
 }
