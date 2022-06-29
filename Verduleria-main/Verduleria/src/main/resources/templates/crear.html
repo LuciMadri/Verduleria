@@ -65,7 +65,7 @@
                             <div class="col-sm-10">
                                 <select th:field="*{sede}" class="form-control form-control-sm col-md-6" id="sede" aria-describedby="emailHelp">
                                     <option th:each="x:${sedes}"
-                                            th:value="${x.id_sede}"
+                                            th:value="${x.id_sede}" 
                                             th:text="${x.nom_sede}"/>
                                 </select>
                             </div>
