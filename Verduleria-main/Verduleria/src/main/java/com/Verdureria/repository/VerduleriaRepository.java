@@ -12,8 +12,8 @@ import org.springframework.stereotype.Repository;
 @Repository
 
 /*
-    Creamos VerduleriaRepository que es una interfaz la cual extiende a 
-    CrudRepository y tiene objetos genericos de Verduleria e Integer
+    Creamos personaRepository que es una interfaz la cual extiende a 
+    CrudRepository y tiene objetos genericos de Persona y Long
 */
 
 //Le pasamos la entidad y el tipo de id   

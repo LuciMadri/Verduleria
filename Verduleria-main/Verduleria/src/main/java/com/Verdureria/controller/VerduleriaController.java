@@ -8,6 +8,7 @@ import com.Verdureria.entity.Sede;
 import com.Verdureria.entity.Verduleria;
 import com.Verdureria.service.ISedeService;
 import com.Verdureria.service.IVerduleriaService;
+import com.Verdureria.service.SedeService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -28,15 +29,15 @@ public class VerduleriaController {
 
     //Hacemos inyeccion de dependencias
     @Autowired
-    //El controller utiliza el servicio, en este caso verduleriaService
+    //El controller utiliza el servicio, en este caso personaService
     private IVerduleriaService verduleriaService;
     
     //Hacemos inyeccion de dependencias
     @Autowired
-    //El controller utiliza el servicio, en este caso sedeService
+    //El controller utiliza el servicio, en este caso personaService
     private ISedeService sedeService;
 
-    /*El GetMapping crea la ruta, entonces al escribir localhost/verduleria
+    /*El GetMapping crea la ruta, entonces al escribir localhost/persona 
     nos ejecuta el metodo
      */
     @GetMapping("/verduleria")
@@ -48,7 +49,7 @@ public class VerduleriaController {
     public String index(Model model) {
 
         /*Aqui creamos una lista y le pasamos la informacion por medio del metodo
-          getAllVerdura de nuestra clase interface.*/
+          getAllPersona de nuestra clase interface.*/
         List<Verduleria> listaVerduleria = verduleriaService.getAllVerdura();
 
         /*Aqui, en nuestro html donde se encuentre la palabra titulo lo va a 
