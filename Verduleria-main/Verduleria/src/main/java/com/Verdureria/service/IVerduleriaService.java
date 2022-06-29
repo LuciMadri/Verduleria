@@ -16,12 +16,12 @@ import java.util.List;
 */
 public interface IVerduleriaService {
     
-    //Este metodo nos permite devolver todas las personas que hay en nuestra bd
-    //Como son varios datos se guarda en una lista con objeto de tipo Persona
+    //Este metodo nos permite devolver todas las verduras que hay en nuestra bd
+    //Como son varios datos se guarda en una lista con objeto de tipo Verduleria
     public List<Verduleria> getAllVerdura();
     
-    //Cuando yo le paso el Id me va a devolver toda la info de esa persona
-    //Como solo es uno se guarda en un objeto de tipo persona
+    //Cuando yo le paso el Id me va a devolver toda la info de esa verdura
+    //Como solo es uno se guarda en un objeto de tipo verdura.
     public Verduleria getVerduleriaById (Integer id);
     
     //Estos metodos son void porque no van a retornar nada
